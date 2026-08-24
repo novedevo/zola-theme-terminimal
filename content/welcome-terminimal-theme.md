@@ -70,10 +70,10 @@ The second part follows here.
 
 ## Shortcodes
 
-`figure` shortcode:
+`term_figure` shortcode:
 
 ```
-figure(src="http://rustacean.net/assets/rustacean-flat-gesture.png",
+term_figure(src="http://rustacean.net/assets/rustacean-flat-gesture.png",
        style="width: 25%;",
        position="center",
        caption_position="left",
@@ -81,7 +81,7 @@ figure(src="http://rustacean.net/assets/rustacean-flat-gesture.png",
        caption_style="font-weight: bold; font-style: italic;")
 ```
 
-{{ figure(src="http://rustacean.net/assets/rustacean-flat-gesture.png",
+{{ term_figure(src="http://rustacean.net/assets/rustacean-flat-gesture.png",
           style="width: 25%;",
           position="center",
           caption_position="left",

@@ -1,4 +1,4 @@
-{% component figure(src, position="", alt = "", style = "", caption = "", caption_position = "", caption_style = "") %}
+{% component term_figure(src, position="", alt = "", style = "", caption = "", caption_position = "", caption_style = "") %}
   {% if src %}
     <figure class="{% if position %}{{ position }}{% else -%} center {%- endif %}" >
       <img src="{{ src | safe }}"{% if alt %} alt="{{ alt }}"{% endif %}{% if style %} style="{{ style }}"{% endif %} decoding="async" loading="lazy"/>
@@ -7,4 +7,4 @@
       {% endif %}
     </figure>
   {% endif %}
-{% endcomponent figure %}
+{% endcomponent term_figure %}
