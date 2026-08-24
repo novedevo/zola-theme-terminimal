@@ -1,10 +1,15 @@
 {% component term_figure(src, position="", alt = "", style = "", caption = "", caption_position = "", caption_style = "") %}
-  {% if src %}
-    <figure class="{% if position %}{{ position }}{% else -%} center {%- endif %}" >
-      <img src="{{ src | safe }}"{% if alt %} alt="{{ alt }}"{% endif %}{% if style %} style="{{ style }}"{% endif %} decoding="async" loading="lazy"/>
-      {% if caption %}
-        <figcaption class="{% if caption_position %}{{ caption_position }}{% else -%} center {%- endif %}"{% if caption_style %} style="{{ caption_style | safe }}"{% endif %}>{{ caption | markdown() | safe }}</figcaption>
-      {% endif %}
-    </figure>
+<figure class="{% if position %}{{ position }}{% else -%} center {%- endif %}" >
+  <img {% if alt %}alt="{{ alt }}"{% endif %}{% if style %}style="{{ style }}"{% endif %}
+    src="{{ src | safe }}"
+    decoding="async" 
+    loading="lazy"/>
+  {% if caption %}
+<figcaption 
+  class="{% if caption_position %}{{ caption_position }}{% else -%} center {%- endif %}"
+  {% if caption_style %}style="{{ caption_style | safe }}"{% endif %}>
+    {{ caption | markdown() | safe }}
+</figcaption>
   {% endif %}
+</figure>
 {% endcomponent term_figure %}
