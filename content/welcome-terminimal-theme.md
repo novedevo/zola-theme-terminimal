@@ -73,29 +73,29 @@ The second part follows here.
 `term_figure` shortcode:
 
 ```
-term_figure(src="http://rustacean.net/assets/rustacean-flat-gesture.png",
-       style="width: 25%;",
-       position="center",
-       caption_position="left",
-       caption="**Ferris**, the (unofficial) Rust mascot",
-       caption_style="font-weight: bold; font-style: italic;")
+<term_figure src="http://rustacean.net/assets/rustacean-flat-gesture.png"
+       style="width: 25%;"
+       position="center"
+       caption_position="left"
+       caption="**Ferris**, the (unofficial) Rust mascot"
+       caption_style="font-weight: bold; font-style: italic;"/>
 ```
 
-{{ term_figure(src="http://rustacean.net/assets/rustacean-flat-gesture.png",
-          style="width: 25%;",
-          position="center",
-          caption_position="left",
-          caption="**Ferris**, the (unofficial) Rust mascot",
-          caption_style="font-style: italic;") }}
+{{ <term_figure src="http://rustacean.net/assets/rustacean-flat-gesture.png"
+          style="width: 25%;"
+          position="center"
+          caption_position="left"
+          caption="**Ferris**, the (unofficial) Rust mascot"
+          caption_style="font-style: italic;"/> }}
 
 ---
 
 `image` shortcode:
 
 ```
-image(src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg",
-      position="left")
+<image src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg"
+         position="left"/>
 ```
 
-{{ image(src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg",
-         position="left") }}
+{{ <image src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg"
+         position="left"/> }}
