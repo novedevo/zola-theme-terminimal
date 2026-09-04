@@ -70,10 +70,10 @@ The second part follows here.
 
 ## Shortcodes
 
-`term_figure` shortcode:
+`term.figure` shortcode:
 
 ```html
-<term_figure 
+<term.figure 
   src="http://rustacean.net/assets/rustacean-flat-gesture.png"
   style="width: 25%;"
   position="center"
@@ -82,7 +82,7 @@ The second part follows here.
   caption_style="font-style: italic;"/>
 ```
 
-{{ <term_figure 
+{{ <term.figure 
     src="http://rustacean.net/assets/rustacean-flat-gesture.png"
     style="width: 25%;"
     position="center"
@@ -92,14 +92,14 @@ The second part follows here.
 
 ---
 
-`image` shortcode:
+`term.image` shortcode:
 
 ```html
-<image 
+<term.image 
   src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg"
   position="left"/>
 ```
 
-{{ <image 
+{{ <term.image 
     src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg"
     position="left"/> }}
